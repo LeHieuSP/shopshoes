@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         
         
-          <h1>shop giay auth</h1>
+          <h1>shop giay the thao</h1>
       </header>
     </div>
   );
