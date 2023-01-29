@@ -29,7 +29,7 @@ export default function Products(props) {
       <div className="row">
         {dataProduct.map((item, index) => {
           return (
-            <div className="col-4 mt-2" key={index}>
+            <div className="col-4 mt-1" key={index}>
               <ProductItem item={item} />
             </div>
           );

@@ -3,8 +3,8 @@ import axios from 'axios';
 
 const initialState = {
         cart: [
-        //     {id: 1, name: 'product1', image: 'https://i.pravatar.cc?u=6', 
-        // price: 1000, quantity: 10}
+            {id: 1, name: 'product1', image: 'https://i.pravatar.cc?u=6', 
+        price: 1000, quantity: 10}
         ],
         dataProduct: [
             {
@@ -33,13 +33,7 @@ const shopReducer = createSlice({
       state.dataProduct = action.payload
     },
     addToCartAction: (state,action) =>{
-        const itemCart = state.cart.find(item => item.id === action.payload.id);
-        if (itemCart) {
-          itemCart.quantity += 1;
-        }
-        else{
-          state.cart.push(action.payload)
-        }
+
     }
   }
 });

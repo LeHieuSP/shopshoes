@@ -3,8 +3,8 @@ import axios from 'axios';
 
 const initialState = {
         cart: [
-        //     {id: 1, name: 'product1', image: 'https://i.pravatar.cc?u=6', 
-        // price: 1000, quantity: 10}
+            {id: 1, name: 'product1', image: 'https://i.pravatar.cc?u=6', 
+        price: 1000, quantity: 10}
         ],
         dataProduct: [
             {
