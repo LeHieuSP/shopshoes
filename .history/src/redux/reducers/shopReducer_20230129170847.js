@@ -54,13 +54,8 @@ const shopReducer = createSlice({
       if (itemCart) {
         itemCart.quantity += quantity;
         if (itemCart.quantity < 1) {
-          // alert("số lượng nhỏ hơn 1");
-          // itemCart.quantity -= quantity;
-          if (window.confirm("Do you want to delete?")) {
-            state.cart = state.cart.filter((item) => item.id !== id);
-          } else {
-            itemCart.quantity -= quantity;
-          }
+          alert("số lượng nhỏ hơn 1");
+          itemCart.quantity -= quantity;
         }
       }
     },
